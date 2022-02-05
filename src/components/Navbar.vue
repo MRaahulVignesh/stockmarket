@@ -1,8 +1,9 @@
 <template>
     <nav class="navbar">
         <!-- LOGO -->
-        <div class="logo">Crypto Market</div>
+        <div class="logo"><h2>Crypto Market</h2></div>
         <!-- NAVIGATION MENU -->
+        <div class="side-bar">
             <ul class="nav-links">
                 <!-- USING CHECKBOX HACK -->
                 <input type="checkbox" id="checkbox_toggle" />
@@ -14,6 +15,7 @@
  <li><a href="/">Add Crypto</a></li>
  </div>
  </ul>
+        </div>
  </nav>
 </template>
 
@@ -25,6 +27,13 @@
  background-color: #F8AE1B;
  color: black
 }
+
+.side-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .nav-links a {
  color: black;
 }
@@ -41,14 +50,17 @@
  font-size: 18px;
  padding-right: 1rem;
  align-items: center;
+ justify-content: center;
 }
+
 .menu li:hover {
- background-color: #F8AE1B;
+ background-color: #f7c563;
  border-radius: 5px;
  transition: 0.3s ease;
 }
 .menu li {
  padding: 5px 14px;
+ text-decoration: none;
 }
 /* DROPDOWN MENU */
 .services {
@@ -71,7 +83,7 @@
  text-align: center;
 }
 .dropdown li:hover {
- background-color: #F8AE1B;
+ background-color: #f7c563;
 }
 .services:hover .dropdown {
  display: block;
@@ -100,7 +112,7 @@ input[type=checkbox]{
 }
 .menu li:hover {
  display: inline-block;
- background-color:#F8AE1B;
+ background-color: #f7c563;
  transition: 0.3s ease;
 }
 .menu li + li {
@@ -118,7 +130,7 @@ input[type=checkbox]:checked ~ .menu{
  transform: translateX(35%);
 }
 .dropdown li:hover {
- background-color: #F8AE1B;
+ background-color: #f7c563;
 }
 }
 </style>
